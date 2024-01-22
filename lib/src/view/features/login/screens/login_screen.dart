@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:intern_test/src/controllers/login_controller.dart';
@@ -6,6 +7,8 @@ import 'package:intern_test/src/view/widgets/blank_appbar.dart';
 import 'package:intern_test/src/view/widgets/input_field.dart';
 import 'package:intern_test/src/view/widgets/password_field.dart';
 import 'package:intern_test/utils/constants.dart';
+import 'package:intern_test/utils/routes.dart';
+import 'package:intern_test/utils/utility.dart';
 import 'package:intern_test/utils/validator.dart';
 
 class LoginScreen extends GetView<LoginController> {
@@ -57,7 +60,7 @@ class LoginScreen extends GetView<LoginController> {
                   ),
                   const SizedBox(height: 15),
                   InputField(
-                    controller: controller.username,
+                    controller: controller.usernameController,
                     hintText: "Username",
                     validator: Validator.validateUsername,
                   ),
@@ -68,7 +71,10 @@ class LoginScreen extends GetView<LoginController> {
                   ),
                   const SizedBox(height: 15),
                   TextButton(
-                      onPressed: () {}, child: const Text("Forget Password?")),
+                      onPressed: () {
+                        showMyToast("Forget Password");
+                      },
+                      child: const Text("Forget Password?")),
                   const SizedBox(height: 8),
                   Obx(
                     () => ActionButton(
@@ -77,6 +83,27 @@ class LoginScreen extends GetView<LoginController> {
                           : "Log in",
                       onPressed:
                           controller.isLoading.value ? null : controller.login,
+                    ),
+                  ),
+                  const SizedBox(height: 8),
+                  Center(
+                    child: RichText(
+                      textAlign: TextAlign.center,
+                      text: TextSpan(
+                        text: "Don't have an account? ",
+                        style: kNormalRichTextStyle,
+                        children: [
+                          TextSpan(
+                            text: "Register Now!",
+                            style: kClickableRichTextStyle,
+                            recognizer: TapGestureRecognizer()
+                              ..onTap = () {
+                                Get.back();
+                                Get.toNamed(Routes.registerScreen);
+                              },
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ],

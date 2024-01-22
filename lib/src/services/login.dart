@@ -23,8 +23,9 @@ Future<AuthUserModel?> _loginWithEmail({
 
     if (!ApiCallHandler.handleApiResponse(response.statusCode,
         listener: listener, json: json)) return null;
-
+    // print(json);
     res = AuthUserModel.fromJson(json);
+    // print(res.firstName);
   } catch (error) {
     debugPrint("login error: $error");
     listener?.call(error.toString());

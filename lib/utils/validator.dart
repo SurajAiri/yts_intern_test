@@ -29,4 +29,13 @@ class Validator {
     }
     return null;
   }
+
+  static String? validateRequiredFields(String? value, {int minLen = 3}) {
+    if (value == null || value == "") {
+      return "Required Field";
+    } else if (value.length < minLen) {
+      return "Must contain at least $minLen characters.";
+    }
+    return null;
+  }
 }

@@ -49,7 +49,9 @@ class LoginOnboardScreen extends StatelessWidget {
                 const SizedBox(height: 25),
                 ActionButton(
                   title: "Register",
-                  onPressed: () {},
+                  onPressed: () {
+                    Get.toNamed(Routes.registerScreen);
+                  },
                 ),
                 const SizedBox(height: 15),
                 ActionButton(

@@ -20,6 +20,7 @@ class AuthUserModel {
   });
 
   AuthUserModel.fromJson(Map<String, dynamic> json) {
+    // print("json we got is $json");
     id = json['id'];
     username = json['username'];
     email = json['email'];

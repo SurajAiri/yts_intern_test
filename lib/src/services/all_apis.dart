@@ -7,8 +7,10 @@ import 'package:intern_test/utils/utility.dart';
 
 import '../model/auth_user_model.dart';
 import '../../utils/endpoints.dart';
+import '../model/todo_model.dart';
 
 part 'login.dart';
+part 'todo_list.dart';
 
 class AllApis {
   static Future<AuthUserModel?> loginWithEmail({
@@ -19,6 +21,14 @@ class AllApis {
     return _loginWithEmail(
       username: email,
       password: password,
+      listener: listener,
+    );
+  }
+
+  static Future<List<TodoModel>> fetchTodoList({
+    ApiCallListener? listener,
+  }) async {
+    return _fetchTodoList(
       listener: listener,
     );
   }
