@@ -1,7 +1,36 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
+import 'package:intern_test/src/model/auth_user_model.dart';
+import 'package:intern_test/src/services/all_apis.dart';
+import 'package:intern_test/utils/api_callback_listener.dart';
+import 'package:intern_test/utils/utility.dart';
 
 class LoginController extends GetxController {
-  TextEditingController emailController = TextEditingController();
+  TextEditingController username = TextEditingController();
   TextEditingController passwordController = TextEditingController();
+  GlobalKey<FormState> formKey = GlobalKey();
+
+  AuthUserModel? user;
+
+  RxBool isLoading = false.obs;
+
+  void login() async {
+    if (!(formKey.currentState?.validate() ?? false)) return;
+    isLoading.value = true;
+    user = await AllApis.loginWithEmail(
+        email: username.text,
+        password: passwordController.text,
+        listener: ApiCallListener(
+          onSuccess: () {
+            // Todo: go to home screen
+          },
+          onError: (error) {
+            showMyToast(error, isError: true);
+          },
+          onCompleted: () {
+            isLoading.value = false;
+          },
+        ));
+  }
 }

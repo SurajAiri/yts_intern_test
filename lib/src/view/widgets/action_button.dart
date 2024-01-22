@@ -8,7 +8,7 @@ class ActionButton extends StatelessWidget {
     this.widthRatio = 0.9,
     this.backgroundColor = Colors.blue,
   });
-  final Function() onPressed;
+  final Function()? onPressed;
   final String title;
   final double widthRatio;
   final Color? backgroundColor;

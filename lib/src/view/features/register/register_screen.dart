@@ -8,8 +8,8 @@ import 'package:intern_test/src/view/widgets/password_field.dart';
 import 'package:intern_test/utils/constants.dart';
 import 'package:intern_test/utils/validator.dart';
 
-class LoginScreen extends GetView<LoginController> {
-  LoginScreen({super.key});
+class RegisterScreen extends GetView<LoginController> {
+  RegisterScreen({super.key});
 
   @override
   final controller = Get.put(LoginController());
