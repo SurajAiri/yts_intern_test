@@ -6,7 +6,7 @@ A project for [YoursThatSenior](https://www.yoursthatsenior.com) internship
 
 This is a test todo-app created as per instructed by [YoursThatSenior](https://www.yoursthatsenior.com) for flutter app dev internship.
 
-<img src="https://github.com/TheCoderSuraj/yts_intern_test/blob/main/misc/show%20up.gif" alt="GIF" width="250" /><img src="https://github.com/TheCoderSuraj/yts_intern_test/blob/main/misc/sc1.png" alt="Screenshot 1" width="250" /> <img src="https://github.com/TheCoderSuraj/yts_intern_test/blob/main/misc/sc4.png" alt="Screenshot 2" width="250" /> <img src="https://github.com/TheCoderSuraj/yts_intern_test/blob/main/misc/sc6.png" alt="GIF" width="250" />
+<img src="https://github.com/TheCoderSuraj/yts_intern_test/blob/main/misc/show%20up.gif" alt="GIF" width="200" /><img src="https://github.com/TheCoderSuraj/yts_intern_test/blob/main/misc/sc1.png" alt="Screenshot 1" width="200" /> <img src="https://github.com/TheCoderSuraj/yts_intern_test/blob/main/misc/sc4.png" alt="Screenshot 2" width="200" /> <img src="https://github.com/TheCoderSuraj/yts_intern_test/blob/main/misc/sc6.png" alt="GIF" width="200" />
 
 Here, I have created:
 
