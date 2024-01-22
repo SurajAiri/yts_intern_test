@@ -11,8 +11,7 @@ This is a test todo-app created as per instructed by [YoursThatSenior](https://w
 ![Screen shots](https://github.com/TheCoderSuraj/yts_intern_test/blob/main/misc/sc4.png)
 ![Screen shots](https://github.com/TheCoderSuraj/yts_intern_test/blob/main/misc/sc6.png) -->
 
-<img src="https://github.com/TheCoderSuraj/yts_intern_test/blob/main/misc/sc1.png" alt="Screenshot 1" width="300" /> <img src="ng)
-![Screen shots](" alt="Screenshot 2" width="300" /> <img src="https://github.com/TheCoderSuraj/yts_intern_test/blob/main/misc/sc6.png" alt="GIF" width="300" />
+<img src="https://github.com/TheCoderSuraj/yts_intern_test/blob/main/misc/show%20up.gif" alt="GIF" width="300" /><img src="https://github.com/TheCoderSuraj/yts_intern_test/blob/main/misc/sc1.png" alt="Screenshot 1" width="300" /> <img src="https://github.com/TheCoderSuraj/yts_intern_test/blob/main/misc/sc4.png" alt="Screenshot 2" width="300" /> <img src="https://github.com/TheCoderSuraj/yts_intern_test/blob/main/misc/sc6.png" alt="GIF" width="300" />
 
 Here, I have created:
 
