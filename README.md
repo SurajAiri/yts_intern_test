@@ -27,3 +27,6 @@ I have used [Dummy Json](https://dummyjson.com/docs) for dummy:
 
 - I have used random function to determine isToday/isTomorrow todo task as this api doesn't return that value
 - Similarly, I have created Random time of day as I was not getting it through api
+
+Use following command to run this app
+`flutter run`
