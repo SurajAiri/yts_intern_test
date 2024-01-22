@@ -8,10 +8,8 @@ import 'package:intern_test/utils/routes.dart';
 import 'package:intern_test/utils/utility.dart';
 
 class LoginController extends GetxController {
-  TextEditingController usernameController =
-      TextEditingController(text: 'kminchelle');
-  TextEditingController passwordController =
-      TextEditingController(text: '0lelplR');
+  TextEditingController usernameController = TextEditingController();
+  TextEditingController passwordController = TextEditingController();
   GlobalKey<FormState> formKey = GlobalKey();
   // username: 'kminchelle',
   //   password: '0lelplR',

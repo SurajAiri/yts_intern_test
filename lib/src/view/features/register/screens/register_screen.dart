@@ -34,7 +34,7 @@ class RegisterScreen extends GetView<RegisterController> {
                 children: [
                   // const SizedBox(height: 15),
                   Image.asset(
-                    apLogoPath,
+                    apLogoBannerPath,
                     fit: BoxFit.cover,
                     width: MediaQuery.of(context).size.width * 0.5,
                   ),

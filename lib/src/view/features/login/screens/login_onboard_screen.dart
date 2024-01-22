@@ -19,7 +19,7 @@ class LoginOnboardScreen extends StatelessWidget {
               children: [
                 const SizedBox(height: 25),
                 Image.asset(
-                  apLogoPath,
+                  apLogoBannerPath,
                   fit: BoxFit.cover,
                   width: MediaQuery.of(context).size.width * 0.5,
                 ),
